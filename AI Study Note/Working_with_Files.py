@@ -1,7 +1,7 @@
 #---------------------------------------------- Two was of opening Files--------------------------------------------
 
 # Opening file in the same directory location as python file
-file_in_same_dir = open("study.txt", mode="r")
+file_in_same_dir = open("C:/Users/Zsazs/OneDrive/Dokumentumok/GitHub/AI_Engineering/AI Study Note/study.txt", mode="r")
 
 # Opening file with different file location as python file
 file_in_diff_dir = open("C:/Users/Zsazs/PycharmProjects/pythonProject1/pythonProject/Reading_Writing_File/my_file.txt", mode="r")
@@ -14,7 +14,7 @@ file_in_same_dir.close()
 file_in_diff_dir.close()
 
 # Method two(2) for closing files
-with open("study.txt", mode="r") as file_in_same_dir:
+with open("C:/Users/Zsazs/OneDrive/Dokumentumok/GitHub/AI_Engineering/AI Study Note/study.txt", mode="r") as file_in_same_dir:
     print(file_in_same_dir.read())
 with open("C:/Users/Zsazs/PycharmProjects/pythonProject1/pythonProject/Reading_Writing_File/my_file.txt", mode="r") as file_in_diff_dir:
     print(file_in_diff_dir.read())
@@ -35,5 +35,7 @@ with open("study.txt", mode="w+") as file_in_same_dir:
 # Method two(2) , inserting multiple strings in a single text file
 with open("study.txt", mode="w+") as file_in_same_dir:
     file_in_same_dir.writelines(Multi_Str)
+
+
 
 
