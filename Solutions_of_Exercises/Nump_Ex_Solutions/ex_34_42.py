@@ -2,7 +2,7 @@ import numpy as np
 import time
 
 # How to get all the dates corresponding to the month of July 2016?
-print(np.arange('2016-07', '2017-08', dtype='datetime64[D]'))
+print(np.arange('2016-07', '2016-08', dtype='datetime64[D]'))
 
 # How to compute ((A+B)*(-A/2)) in place (without copy)?
 A = np.ones(3) * 1
@@ -48,24 +48,27 @@ print("\n")
 
 # How to sum a small array faster than np.sum?
 # Not recommended for small data
-L = [1,2,3,4,5]
-start_time1 = time.time()
-x = np.arange(L)
-np.sum(x)
-finish_time1 = time.time()
-print((finish_time1 - start_time1))
-
-# Fast method for small data
-start_time2 = time.time()
-for x in [1,2,3,4,5]:
-    x += x
-finish_time2 = time.time()
-print(finish_time2 - start_time2)
-print("\n")
+# L = [1,2,3,4,5]
+# start_time1 = time.time()
+# x = np.arange(L)
+# np.sum(x)
+# finish_time1 = time.time()
+# print((finish_time1 - start_time1))
+#
+# # Fast method for small data
+# start_time2 = time.time()
+# for x in [1,2,3,4,5]:
+#     x += x
+# finish_time2 = time.time()
+# print(finish_time2 - start_time2)
+# print("\n")
 
 # Consider two random array A and B, check if they are equal
 # Note this code only runs if the code for checking fast method is commented out
 A = np.random.randint(0, 2, 5)
+print(A)
 B = np.random.randint(0, 2, 5)
+print(B)
 equal_or_not = np.allclose(A, B)
+# equal_or_not = np.allclose(A, B)
 print(equal_or_not)
