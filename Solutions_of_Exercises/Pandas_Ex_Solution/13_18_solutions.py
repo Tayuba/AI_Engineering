@@ -13,3 +13,7 @@ df = pd.DataFrame(data, index=labels)
 change_age = df.loc["f", "age"] = 1.5
 print(df)
 print("\n")
+
+# 18. Sort df first by the values in the 'age' in decending order, then by the value in the 'visit' column in ascending order.
+sorting_by_order = df.sort_values(by=["age", "visits"], ascending=[False, True])
+print(sorting_by_order, "\n")

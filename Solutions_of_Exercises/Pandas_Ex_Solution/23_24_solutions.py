@@ -18,6 +18,7 @@ print(row_mean_sub, "\n")
 
 # 24. Suppose you have DataFrame with 10 columns of real numbers, for example:
 df = pd.DataFrame(np.random.random(size=(5, 10)), columns=list("abcdefghij"))
+# df = pd.DataFrame(np.random.seed(42))
 # Which column of numbers has the smallest sum? (Find that column's label.
 
 smallest_sum = df.sum().idxmin()
