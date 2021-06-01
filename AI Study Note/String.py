@@ -184,3 +184,4 @@ print(reduce_str[::-1]) # Runs from last indix to the beginning with step of one
 print(reduce_str[:-3:-1]) # Runs from last indix to the third indix with step of one (backwards slicing)
 print(reduce_str[-2:-5:-1]) # Runs from last indix to the beginning with step of one (backwards slicing)
 print(reduce_str[:-6:-1]) # Runs from last indix to the beginning with step of one (backwards slicing)
+

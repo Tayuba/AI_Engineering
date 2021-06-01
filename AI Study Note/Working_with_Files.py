@@ -37,5 +37,15 @@ with open("study.txt", mode="w+") as file_in_same_dir:
     file_in_same_dir.writelines(Multi_Str)
 
 
+#----------------------Reading File, Writing, Appending with all the various read and access modes---------------------
 
+text1 = ["My name is Ayuba\n", "I am from Ghana\n", "I live in Kaiserslautern"]
+# Creating file and opening
+with open("Ayuba.txt", mode="w") as text:
+    print(text.writelines(text1))
 
+#
+import pandas as pd
+df = pd.DataFrame({"Data1": [10, 20, 30], "Date2": [40, 50, 60]})
+norm_df = ((df-df.min()) / (df.max()-df.min()))
+print(norm_df)
