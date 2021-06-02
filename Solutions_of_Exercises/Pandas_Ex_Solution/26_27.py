@@ -1,13 +1,13 @@
 import numpy as np
 import pandas as pd
 
-data = {'animal': ['cat', 'cat', 'snake', 'dog', 'dog', 'cat', 'snake', 'cat', 'dog', 'dog'],
-        'age': [2.5, 3, 0.5, np.nan, 5, 2, 4.5, np.nan, 7, 3],
-        'visits': [1, 3, 2, 3, 2, 3, 1, 1, 2, 1],
-        'priority': ['yes', 'yes', 'no', 'yes', 'no', 'no', 'no', 'yes', 'no', 'no']}
-
-labels = ['a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j']
-df = pd.DataFrame(data, index=labels)
+# data = {'animal': ['cat', 'cat', 'snake', 'dog', 'dog', 'cat', 'snake', 'cat', 'dog', 'dog'],
+#         'age': [2.5, 3, 0.5, np.nan, 5, 2, 4.5, np.nan, 7, 3],
+#         'visits': [1, 3, 2, 3, 2, 3, 1, 1, 2, 1],
+#         'priority': ['yes', 'yes', 'no', 'yes', 'no', 'no', 'no', 'yes', 'no', 'no']}
+#
+# labels = ['a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j']
+# df = pd.DataFrame(data, index=labels)
 
 # 26. You have a DataFrame that consists of 10 columns of floating--point numbers. Suppose that exactly 5 entries in each row are NaN values. For each row of the DataFrame, find the column which contains the third NaN value.
 # (You should return a Series of column labels. Try not to use .iterrows())
@@ -22,6 +22,8 @@ data = {
 8:[1,np.nan,3,np.nan,np.nan],
 9:[1,2,3,4,np.nan],
 10:[1,np.nan,3,4,5]}
+
+df = pd.DataFrame(data)
 pos_3_NaN = (df.isnull().cumsum(axis=1) == 3).idxmax(axis=1)
 print(pos_3_NaN, "\n")
 

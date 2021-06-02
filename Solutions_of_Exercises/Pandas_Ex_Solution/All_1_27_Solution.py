@@ -67,6 +67,7 @@ print(sum_of_visit)
 print("\n")
 
 # 15. Calculate the mean age for each different animal in df.
+print(df)
 mean_of_age = df.groupby("animal")["age"].mean()
 print(mean_of_age)
 print("\n")
