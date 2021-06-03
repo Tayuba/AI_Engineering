@@ -109,7 +109,7 @@ print(inter_same, "\n")
 df = pd.DataFrame(np.random.random(size=(5, 3))) # a 5x3 frame of float values
 # how do you subtract the row mean from each element in the row?
 row_mean_sub = df.sub(df.mean(axis=1), axis=0)
-print(row_mean_sub, "\n")
+print(row_mean_sub)
 
 # 24. Suppose you have DataFrame with 10 columns of real numbers, for example:
 df = pd.DataFrame(np.random.random(size=(5, 10)), columns=list("abcdefghij"))
