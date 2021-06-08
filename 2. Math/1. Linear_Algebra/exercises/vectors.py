@@ -85,21 +85,13 @@ print("\n")
 
 # Write functions row_times_column and matrix_mult:
 def row_times_column(m1, row, m2, column):
-    """
-      >>> row_times_column([[1, 2], [3, 4]], 0, [[5, 6], [7, 8]], 0)
-      19
-      >>> row_times_column([[1, 2], [3, 4]], 0, [[5, 6], [7, 8]], 1)
-      22
-      >>> row_times_column([[1, 2], [3, 4]], 1, [[5, 6], [7, 8]], 0)
-      43
-      >>> row_times_column([[1, 2], [3, 4]], 1, [[5, 6], [7, 8]], 1)
-      50
-    """
-
+    multy_matrix = np.matmul(m1, m2)
+    r_c_m = multy_matrix[row][column]
+    print(r_c_m)
 
 
 row_times_column([[1, 2], [3, 4]], 0, [[5, 6], [7, 8]], 0)
-
+print("\n")
 
 def matrix_mult(m1, m2):
    matrix_r_c = np.matmul(m1, m2)
