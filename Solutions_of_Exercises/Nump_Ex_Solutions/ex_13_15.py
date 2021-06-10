@@ -16,3 +16,6 @@ print (mean_of_size)
 D_2 = np.ones((10,10))
 D_2[1:-1,1:-1]=0
 print(D_2)
+
+a = np.zeros([1,2])
+print(a)
